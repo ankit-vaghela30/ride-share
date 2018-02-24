@@ -1,0 +1,15 @@
+@(vehicle: Vehicle)
+
+<html>
+<head>
+<title>@vehicle.vehicleId</title>
+</head>
+<body>
+<h1>@vehicle.vehicleId</h1>
+	<p>Vehicle Id: @vehicle.vehicleId</p>
+	<p>Vehicle Name: @vehicle.vehicleName</p>
+
+
+	<a href="@routes.VehicleController.destroy(vehicle.vehicleId)">Delete</a>
+</body>
+</html>

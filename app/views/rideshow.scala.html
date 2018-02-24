@@ -1,0 +1,15 @@
+@(ride: Ride)
+
+<html>
+<head>
+<title>@ride.rideId</title>
+</head>
+<body>
+<h1>@ride.rideId</h1>
+	<p>Ride Source: @ride.source</p>
+	<p>Ride Destination: @ride.destination</p>
+	<p>Ride Time: @ride.startTime</p>
+
+	<a href="@routes.RideController.destroy(ride.rideId)">Delete</a>
+</body>
+</html>

@@ -1,0 +1,197 @@
+@*
+* This template is called from the `index` template. This template
+* handles the rendering of the page header and body tags. It takes
+* two arguments, a `String` for the title of the page and an `Html`
+* object to insert into the body of the page.
+*@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @* Here's where we render the page title `String`. *@
+    <title>@title</title>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+    <script src="@routes.Assets.versioned("javascripts/hello.js")" type="text/javascript"></script>
+
+        <!-- BOOTSTRAP CSS/JSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.3/vivus.js" crossorigin="anonymous"></script>
+
+        <!-- JQUERY AND POPPER CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+        <!-- Stylesheets and javascript -->
+    <link rel="stylesheet" type='text/css' media="screen" href='@routes.Assets.versioned("stylesheets/index.css")'>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Source+Sans+Pro" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='http:////netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
+
+    </head>
+    <style>
+            html {
+                font-family: 'PT Sans', sans-serif;
+            }
+            body {
+                margin: auto;
+            }
+            .nav_text {
+                color: white;
+            }
+            .navbar-header{
+                margin-left:5px;
+                width:100%;
+            }
+            .navcontainer {
+                margin-left: 10%;
+                margin-right: 5%;
+            }
+            body {
+                margin: auto;
+            }
+            .navbar, .navbar-fixed {
+                background-color: gray;
+                opacity: .90;
+                z-index: 99;
+            }
+            #navbar {
+                margin-left: 10%;
+                margin-right: 5%;
+            }
+            .navbar-brand {
+                font-family: 'Bitter', serif;
+                font-size: 22px;
+                color: white;
+            }
+            .nav-link {
+                font-size: 16px;
+                font-family: 'Bitter', serif;
+                color: white;
+            }
+            nav.navbar.fixed-top {
+                padding: 0em;
+                box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+            }
+            .jumbotron {
+                background-image: url("https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=2689&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+                background-position: left;
+                padding-bottom: 6em;
+                padding-top: 3em;
+                border-radius: 0px;
+                margin-bottom: 0px;
+                z-index: 3;
+            }
+            .jumbotron-text {
+                margin-left: 10%;
+            }
+            .display-3 {
+                font-family: 'Bitter', serif;
+                font-weight: 700;
+                color: white;
+                padding-top: 1em;
+            }
+            .lead, .lead-2 {
+                color: white;
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+            .below-jumbo{
+                margin-left: 7%;
+                margin-right: 7%;
+                padding-bottom: 3em;
+                padding-top: 4em;
+                background-color: white;
+                z-index: 2;
+            }
+            .mid {
+                text-align: center;
+            }
+            .row1 {
+                margin-left: 10%;
+            }
+            .midtext {
+                font-size: 18px;
+                color: black;
+                font-family: 'Bitter', serif;
+            }
+            .longmid {
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            .midp {
+                margin: inherit;
+                color: black;
+                margin: 1.5em;
+            }
+            .my-2 {
+                display: block;
+                height: 1px;
+                border: 0;
+                border-top: 1px solid #ccc;
+                margin: 1em 0;
+                padding: 0;
+            }
+            .bottom-wrapper {
+                padding-top: 4em;
+                margin-top: 4em;
+                background-color: indianred;
+                padding-bottom: 3em;
+                box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+                border-bottom-left-radius: 3em;
+                border-bottom-right-radius: 1em;
+                border-top-right-radius: 3em;
+                border-top-left-radius: 1em;
+            }
+            .holder {
+                background-color: indianred;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            .card {
+                margin: 0 auto;
+                float: none;
+                margin-bottom: 10px;
+                width: 90%;
+                box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+                border: 0px;
+            }
+            .card-title {
+                font-family: 'Bitter', serif;
+            }
+            .card-text {
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+            .bottom-h1 {
+                margin-left: 10%;
+                font-family: 'Bitter', serif;
+                font-size: 35px;
+                color: white;
+            }
+            .bottom-h2 {
+                margin-left: 10%;
+                margin-right: 15%;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 22px;
+                color: white;
+            }
+            .navbar-footer {
+                background-color: white;
+            }
+            #footerlink {
+                font-size: 16px;
+                font-family: 'Bitter', serif;
+                color: black;
+            }
+            #bottom-brand {
+                color: black;
+            }
+    </style>
+
+    <body>
+        @* And here's where we render the `Html` object containing
+        * the page content. *@
+        @content
+    </body>
+</html>

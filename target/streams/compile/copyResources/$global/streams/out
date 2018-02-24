@@ -1,0 +1,7 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(C:\IMP Files\Play_Framework\Ride_Share_Final\conf\application.conf,C:\IMP Files\Play_Framework\Ride_Share_Final\target\scala-2.11\classes\application.conf)[0m
+[0m[[0mdebug[0m] [0m	(C:\IMP Files\Play_Framework\Ride_Share_Final\conf\evolutions,C:\IMP Files\Play_Framework\Ride_Share_Final\target\scala-2.11\classes\evolutions)[0m
+[0m[[0mdebug[0m] [0m	(C:\IMP Files\Play_Framework\Ride_Share_Final\conf\logback.xml,C:\IMP Files\Play_Framework\Ride_Share_Final\target\scala-2.11\classes\logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(C:\IMP Files\Play_Framework\Ride_Share_Final\conf\routes,C:\IMP Files\Play_Framework\Ride_Share_Final\target\scala-2.11\classes\routes)[0m
+[0m[[0mdebug[0m] [0m	(C:\IMP Files\Play_Framework\Ride_Share_Final\conf\evolutions\default,C:\IMP Files\Play_Framework\Ride_Share_Final\target\scala-2.11\classes\evolutions\default)[0m
+[0m[[0mdebug[0m] [0m	(C:\IMP Files\Play_Framework\Ride_Share_Final\conf\evolutions\default\1.sql,C:\IMP Files\Play_Framework\Ride_Share_Final\target\scala-2.11\classes\evolutions\default\1.sql)[0m

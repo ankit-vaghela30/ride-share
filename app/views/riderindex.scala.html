@@ -1,0 +1,16 @@
+@(riders: List[Rider])
+
+<html>
+<head>
+<title>All Riders</title>
+</head>
+<body>
+<h1>All Riders</h1>
+@for(rider <- riders){
+	<a href="@routes.RiderController.show(rider.riderId)">@rider.riderId</a>
+	<p>Rider Name: @rider.firstName</p>
+}
+
+<a href="@routes.RiderController.create()">Create Rider</a>
+</body>
+</html>

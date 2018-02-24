@@ -1,0 +1,16 @@
+@(vehicles: List[Vehicle])
+
+<html>
+<head>
+<title>All Vehicles</title>
+</head>
+<body>
+<h1>All Vehicles</h1>
+@for(vehicle <- vehicles){
+	<a href="@routes.VehicleController.show(vehicle.vehicleId)">@vehicle.vehicleId</a>
+	<p>Vehicle Name: @vehicle.vehicleName</p>
+}
+
+<a href="@routes.VehicleController.create()">Create Vehicle</a>
+</body>
+</html>

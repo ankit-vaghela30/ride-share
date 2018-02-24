@@ -1,0 +1,18 @@
+@(ride: List[Ride])
+
+<html>
+<head>
+<title>All Ride</title>
+</head>
+<body>
+<h1>All Ride</h1>
+@for(ride <- ride){
+	<a href="@routes.RideController.show(ride.rideId)">@ride.rideId</a>
+	<p>Ride Source: @ride.source</p>
+	<p>Ride Destination: @ride.destination</p>
+	<p>Ride Time: @ride.startTime</p>
+}
+
+<a href="@routes.RideController.create()">Create Ride</a>
+</body>
+</html>
