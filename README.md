@@ -5,10 +5,10 @@ This project was done as part of course curriculum of Database Management System
 
 Details about the project can be found in /ride-share/documents which includes Relational Models (UML, BCNF and 3NF) of the project, project report and idea of the project.
 
-##About
+## About
 RideShare is a web application intended for commuters to share their rides with others.
 
-##How to run
+## How to run
 To successfully run the application, system needs two things.
 
 1. SBT to run Play2 framework.
