@@ -3,7 +3,7 @@ A Play2 framework based java web application
 
 This project was done as part of course curriculum of Database Management Systems (CSCI6370) @ UGA. It was a final project of the course and was done in team of five students.
 
-Details about the project can be found in /ride-share/documents which includes Relational Models (UML, BCNF and 3NF) of the project, project report and idea of the project.
+Details about the project can be found in https://github.com/ankit-vaghela30/ride-share/tree/master/Documents which includes Relational Models (UML, BCNF and 3NF) of the project, project report and idea of the project.
 
 ## About
 RideShare is a web application intended for commuters to share their rides with others.
@@ -16,11 +16,11 @@ To successfully run the application, system needs two things.
 
 In the application.conf file present in conf folder, please change default.username and default.password of MySql server according to your mySQL server credentials. The default.url points to the database schema it is connected to.
 
-You can run createSchema.SQL file to create the database schema. Even if you don't, the Model class will take care of it,
+You can run https://github.com/ankit-vaghela30/ride-share/blob/master/SQL_Scripts/RideShare_CreateSchema.sql file to create the database schema. Even if you don't, the Model class will take care of it,
 and will create the schema itself when you run the application. If you are creating schema using the script then after executing the application, please click on
 'Mark it as Resolved' button, as the application tries to make schema from Model.
 
-To insert some default data into the database you can run insertSchema.SQL file. Though it is not needed to have default values. The application is developed in a way that there is no dependency on default data.
+To insert some default data into the database you can run https://github.com/ankit-vaghela30/ride-share/tree/master/SQL_Scripts/RideShare_Insert_Schema.sql file. Though it is not needed to have default values. The application is developed in a way that there is no dependency on default data.
 
 
 To run the application run the following commands on CMD.
